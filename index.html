@@ -9,22 +9,31 @@
 </head>
 <body>
   <div class="container">
+    <div class="weather-app-wrapper">
     <div class="weather-app">
-     <h1>
-      New York
-     </h1>
-     <ul>
-       <li>
-         Friday 05:00
-       </li>
-       <li>
-         Clear
-       </li>
-     </ul>
+      <div class="overview">
+       <h1>
+        New York
+       </h1>
+        <ul>
+         <li>
+          Friday 05:00
+         </li>
+         <li>
+          Clear
+         </li>
+        </ul>
+      </div>
      <div class="row">
        <div class="col-6">
-         <img src="https://ssl.gstatic.com/onebox/weather/64/sunny_s_cloudy.png" alt="Sunny-cloudy" />
-         12ºC | ºF  
+         <div class="clearfix weather-temperature">
+          <img src="https://ssl.gstatic.com/onebox/weather/64/sunny_s_cloudy.png" alt="Sunny-cloudy" class="float-left" />
+           <div class="float-left">
+          <strong>12</strong>
+          <span class="units">ºC | <a href="#">ºF</a></span>
+           </div>
+          </div> 
+         </div> 
        </div>
        <div class="col-6">
          <ul>
@@ -40,12 +49,13 @@
          </ul>
        </div>
      </div>
+  </div>
   <small>
     <a href="https://github.com/Meliiii-25/weather-app" target="_blanck">
       Open-source code</a> 
       by Melissa Urrego
   </small>
-  </div>
+ </div>
 </div>
     <script src="app.js"></script>
 </body>
